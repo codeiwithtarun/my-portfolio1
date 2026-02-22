@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarun Tyagi | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+<nav>
+<h2 class="logo">My Portfolio</h2>
+
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+
+<ul id="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+
+<li><a href="#hobbies">Hobbies</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#contacts">Contacts</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+<div class="hero-text">
+<h1>Hello, I'm <span>Tarun Tyagi</span></h1>
+<h3>BCA Student | Data Science  &  AI/ML/DL Learner</h3>
+<a href="#contacts" class="cta-btn">Contacts Me</a>
+<a href="resume/resume.pdf"
+target="_blank" class="resume-btn"> my Resume
+</a>
+</div>
+
+<div class="hero-img">
+<img src="profile.jpeg" class="profile-pic" alt="Profile">
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section fade">
+<h2 class="about-btn">About Me</h2>
+<p>I am a passionate and dedicated BCA student with a strong interest in Data Science, Artificial Intelligence, Machine Learning, and Deep Learning. I have a solid foundation in computer applications and programming, and I enjoy exploring how data can be transformed into meaningful insights.
+
+</p>
+<p>
+My academic journey has helped me understand the importance of data-driven decision making and intelligent systems.
+
+
+ I am particularly interested in building predictive models, analyzing complex datasets, and developing AI-based solutions that solve real-world problems.
+
+</p>
+<p>
+I continuously work on improving my technical skills in Python, data analysis, and machine learning algorithms. Along with technical growth, I focus on enhancing my problem-solving ability, logical thinking, and analytical mindset.
+
+My goal is to become a skilled data professional who can contribute to innovative AI-driven projects and create impactful solutions using modern technologies. 
+I am always eager to learn new tools, explore emerging technologies, and take on challenging opportunities that help me grow both personally and professionally..</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section fade">
+<h2 class="skills-btn">Skills</h2>
+
+<div class="skill-category">
+<h3>🌐 Web Development</h3>
+<div class="grid">
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">JavaScript</div>
+</div>
+</div>
+
+<div class="skill-category">
+<h3>💻 Programming Languages</h3>
+<div class="grid">
+<div class="card">C</div>
+<div class="card">C++</div>
+<div class="card">Python</div>
+<div class="card">Go</div>
+</div>
+</div>
+
+<div class="skill-category">
+<h3>📊 Data & Analytics</h3>
+<div class="grid">
+<div class="card">Advanced Excel</div>
+<div class="card">Power BI</div>
+<div class="card">Tableau</div>
+<div class="card">Data Analysis</div>
+<div class="card">Data Analytics</div>
+<div class="card">Pandas</div>
+<div class="card">NumPy</div>
+<div class="card">MatPlotLib</div>
+<div class="card">Seaborn</div>
+</div>
+</div>
+
+<div class="skill-category">
+<h3>🤖 AI / Machine Learning</h3>
+<div class="grid">
+<div class="card">Artifically Intelligence</div>
+<div class="card">Machine Learning</div>
+<div class="card">Deep Learning</div>
+</div>
+</div>
+
+<div class="skill-category">
+<h3>🧠 Core Computer Science</h3>
+<div class="grid">
+<div class="card">Data Structures & Algorithms (DSA)</div>
+</div>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section fade">
+<h2 class="projects-btn">Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Snake Game</h3>
+<button onclick="openProject('snake')" class="project-btn">About Project</button>
+</div>
+
+<div class="card">
+<h3>Kirana Store Management</h3>
+<button onclick="openProject('kirana')" class="project-btn">About Project</button>
+</div>
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<button onclick="openProject('portfolio')" class="project-btn">About Project</button>
+</div>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section fade">
+<h2 class="section-title">Education</h2>
+<div class="card">
+    <h3>Bachelor of Computer Applications (BCA)</h3>
+    <p>Institute of Techanology and Science (I.T.S),Mohannagar GZB</p>
+    <p>2024 - 2027</p>
+    <p>1st Sem Marks = 70.83%, 7.45 CGPA</p>
+    <p>2nd Sem Marks = 76.00%, 8.00 CGPA</p>
+</div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies" class="section fade">
+<h2>Hobbies</h2>
+<div class="grid">
+<div class="card">Coding</div>
+<div class="card">Gaming</div>
+<div class="card">Reading Tech Blogs</div>
+</div>
+</section>
+
+<!-- CERTIFICATES AUTO SLIDER -->
+<section id="certificates" class="section fade">
+<h2>Certificates</h2>
+
+<div class="slider">
+<img id="sliderImage" src="certificates/imag1.jpeg" alt="Certificate">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contacts" class="section fade">
+<h2>Contacts</h2>
+<p>here are my social lins</p>
+
+<div class="social-icons">
+    <a href="https://www.linkedin.com/in/tarun-tyagi-47a74b320" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/codeiwithtarun" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.instagram.com/taruntyagii01?igsh=M2N0YWgwZXJwY3A1" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="mailto:taruntyagi2211@gmail.com">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div>
+
+
+</section>
+
+<footer>
+<p>© 2026 Tarun Tyagi. Made with <span class="heart"> ❤</span></p>
+
+<p> All Rights Reserved.</p>
+</footer>
+<div id="projectModal" class="modal">
+<div class="modal-content">
+<span class="close" 
+onclick="closeProject()">&times;</span>
+
+<h2 id="projectTitle"></h2>
+<p id="projectDescription"></p>
+
+<div class="project-images">
+<img id="projectImg1">
+<img id="projectImg2">
+</div>
+
+</div>
+</div>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
