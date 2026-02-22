@@ -67,5 +67,20 @@ img2.src = "project-images/portfolio2.png";
 }
 
 function closeProject(){
-document.getElementById("projectModal").style.display = "none";
+document.getElementById("projectModal").style.display = "block";
 }
+
+function openGallery() {
+    document.getElementById("certificateModal").style.display = "block";
+
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+}
+
+function closeGallery() {
+    document.getElementById("certificateModal").style.display = "none";
+
+    document.documentElement.style.overflow = "auto";
+    document.body.style.overflow = "auto";
+}
+    

@@ -266,13 +266,39 @@ cursor:pointer;
     color: #add;
 }
 .social-icons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 28px;
+    transition: transform 0.3 ease;
     margin-top: 20px;
 }
 
-.social-icons a{
-    margin: 0 15px;
-    font-size: 28px;
-    transition: 0.3s;
+/* Hover Move */
+.social-icon:hover {
+    transform: translateY(-8px);
+}
+
+/* Tooltip */
+.social-icon::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00f7ff;
+    color: #000;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.social-icon:hover::after {
+    opacity: 1;
+    bottom: -40px;
 }
 
 /* Individual social media handle  Colors */
@@ -495,4 +521,74 @@ animation: beat 1s infinite;
     font-size: 20px;
   }
 
+}
+/* Modal Background */
+/* Modal Background */
+/* Modal Background */
+/* ===== Modal Background ===== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+
+    overflow-y: auto;   /* ⭐ scroll yahi hoga */
+}
+
+/* ===== Modal Box ===== */
+.modal-content {
+    background: #111;
+    width: 90%;
+    max-width: 1100px;
+    height: 85vh;
+    overflow-y: scroll;
+
+    margin: 60px auto;   /* center horizontally */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* ===== Gallery Grid ===== */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    color: #00f7ff;
+
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border: 1px solid #00f7ff;
+    border-radius: 5px;
+    transform: all 0.3s ease;
+}
+.close-btn:hover {
+    background: #00c3ff;
+    color: #000;
+}
+
+/* Gallery Images */
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery-container img {
+    width: 250px;
+    border-radius: 8px;
 }
