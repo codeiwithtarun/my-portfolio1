@@ -448,10 +448,12 @@ animation: beat 1s infinite;
                                  /* mobile me preview fix or sahi karne ke liye  */
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
   .hero {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 40px 20px;
   }
@@ -466,14 +468,14 @@ animation: beat 1s infinite;
 
   .btn,
   .project-btn {
-    width: 80%;
+    width: 85%;
     margin: 10px auto;
     display: block;
   }
 
   .hero img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     margin-top: 20px;
   }
 
