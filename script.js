@@ -73,14 +73,13 @@ document.getElementById("projectModal").style.display = "block";
 function openGallery() {
     document.getElementById("certificateModal").style.display = "block";
 
-    document.documentElement.style.overflow = "hidden";
+    // ⭐ background lock
     document.body.style.overflow = "hidden";
 }
 
 function closeGallery() {
     document.getElementById("certificateModal").style.display = "none";
 
-    document.documentElement.style.overflow = "auto";
+    // ⭐ background unlock
     document.body.style.overflow = "auto";
 }
-    

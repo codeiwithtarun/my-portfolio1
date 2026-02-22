@@ -522,43 +522,7 @@ animation: beat 1s infinite;
   }
 
 }
-/* Modal Background */
-/* Modal Background */
-/* Modal Background */
-/* ===== Modal Background ===== */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 
-    background: rgba(0,0,0,0.8);
-    z-index: 9999;
-
-    overflow-y: auto;   /* ⭐ scroll yahi hoga */
-}
-
-/* ===== Modal Box ===== */
-.modal-content {
-    background: #111;
-    width: 90%;
-    max-width: 1100px;
-    height: 85vh;
-    overflow-y: scroll;
-
-    margin: 60px auto;   /* center horizontally */
-    padding: 30px;
-    border-radius: 10px;
-}
-
-/* ===== Gallery Grid ===== */
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
 /* Close Button */
 .close-btn {
     position: absolute;
@@ -591,4 +555,35 @@ animation: beat 1s infinite;
 .gallery-container img {
     width: 250px;
     border-radius: 8px;
+}
+.gallery-btn {
+    display: inline-block;
+    margin: 30px auto;
+    padding: 14px 35px;
+
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+
+    color: #00f7ff;
+    border: 2px solid #00f7ff;
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Center button */
+#certificates {
+    text-align: center;
+}
+
+/* Hover Effect */
+.gallery-btn:hover {
+    background: #00f7ff;
+    color: #000;
+    box-shadow: 0 0 15px #00f7ff,
+                0 0 30px #00f7ff;
+    transform: translateY(-3px);
 }
