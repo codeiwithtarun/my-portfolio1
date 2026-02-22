@@ -474,16 +474,17 @@ animation: beat 1s infinite;
 
   .btn,
   .project-btn {
-    width: 85%;
+    width: 80%;
     margin: 10px auto;
     display: block;
   }
 
   .hero img {
-    width: 220px;
-    height: 220px;
-    margin-top: 10px;
-    gap: 10px;
+    width: 65%;
+    max-width: 240px;
+    height: auto;
+    margin-top: 15px;
+   
   }
 
   .logo {
