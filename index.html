@@ -11,6 +11,8 @@
 
 </head>
 <body>
+    
+    
 
 <header>
 <nav>
@@ -37,13 +39,13 @@
 <div class="hero-text">
 <h1>Hello, I'm <span>Tarun Tyagi</span></h1>
 <h3>BCA Student | Data Science  &  AI/ML/DL Learner</h3>
-<a href="#contacts" class="cta-btn">Contacts Me</a>
+<a href="#projects" class="cta-btn">View Projects</a>
 <a href="resume/resume.pdf"
-target="_blank" class="resume-btn"> my Resume
+target="_blank" class="resume-btn"> Download Resume
 </a>
 </div>
 
-<div class="hero-img">
+<div class="hero-img" style="margin-top: 100px;">
 <img src="profile.jpeg" class="profile-pic" alt="Profile">
 </div>
 </section>
@@ -132,12 +134,17 @@ I am always eager to learn new tools, explore emerging technologies, and take on
 
 <div class="card">
 <h3>Snake Game</h3>
-<button onclick="openProject('snake')" class="project-btn">About Project</button>
+<a href="snake.html" class="project-btn" style="margin-top: 15px;
+display:inline-block;">
+About Project</a>
 </div>
 
 <div class="card">
 <h3>Kirana Store Management</h3>
-<button onclick="openProject('kirana')" class="project-btn">About Project</button>
+<a href="kirana.html" class="project-btn" style="margin-top: 15px;
+display:inline-block;">
+About Project</a>
+
 </div>
 
 <div class="card">
@@ -191,6 +198,27 @@ I am always eager to learn new tools, explore emerging technologies, and take on
 <section id="contacts" class="section fade">
 <h2>Contacts</h2>
 <p>Conect With Me</p>
+<form id="contact-form" 
+      style="max-width:500px; margin:30px auto; display:flex; flex-direction:column; gap:15px;">
+
+  <input type="text" name="name" placeholder="Your Name" required 
+         style="padding:12px; border-radius:8px; border:none;">
+
+  <input type="email" name="email" placeholder="Your Email" required 
+         style="padding:12px; border-radius:8px; border:none;">
+
+  <textarea name="message" placeholder="Message" rows="5" required
+            style="padding:12px; border-radius:8px; border:none;"></textarea>
+
+  <button type="submit"
+          style="padding:12px; border:none; border-radius:25px;
+                 background:#00f7ff; font-weight:bold; cursor:pointer;">
+    Send Message
+  </button>
+
+</form>
+
+<p id="form-status" style="margin-top:15px;"></p>
 
 <div class="social-icons">
     <a href="https://www.linkedin.com/in/tarun-tyagi-47a74b320" target="_blank"
@@ -243,8 +271,31 @@ onclick="closeProject()">&times;</span>
 </div>
 </div>
 
-<!-- SCRIPT -->
+<!-- mess send ke liye .js code  -->
 <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("jSVit5062EpK8Dz2I");
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_7cku8mj", "template_w61t0mw", this)
+    .then(function() {
+      document.getElementById("form-status").innerText = "Message Sent Successfully!";
+      document.getElementById("contact-form").reset();
+    
+      
+     }, function(error) {
+      document.getElementById("form-status").innerText = "Failed to Send Message.";
+    });
+});
+
+</script>
 
 </body>
 </html>

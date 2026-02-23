@@ -83,3 +83,4 @@ function closeGallery() {
     // ⭐ background unlock
     document.body.style.overflow = "auto";
 }
+
