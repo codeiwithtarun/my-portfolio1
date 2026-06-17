@@ -17,7 +17,7 @@ color:white;
 /* NAVBAR */
 header{
 background:#112240;
-padding:25px 8%;
+padding:15px 8%;
 position:fixed;
 width:100%;
 top:0;
@@ -39,9 +39,18 @@ color:#64ffda;
 }
 
 nav ul{
-display:flex;
-gap:20px;
-list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    list-style:none;
+}
+#nav-links{
+    display:grid;
+    grid-template-columns: repeat(7, auto);
+    gap:23px 25px;
+    list-style:none;
+    justify-content:center;
 }
 
 nav a{

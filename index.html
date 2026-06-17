@@ -16,26 +16,25 @@
 
 <header>
 <nav>
-    <div class="logo">My Portfolio</div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+<h2 class="logo">My Portfolio</h2>
 
-    <div class="nav-menu">
-        <ul class="nav-row">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-        </ul>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
 
-        <ul class="nav-row">
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-        </ul>
-    </div>
+<ul id="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Me</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+
+
+<li><a href="#hobbies">Hobbies</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#Awards">Awards</a></li>
+<li><a href="#Experience">Experience</a></li>
+
+<li><a href="#contacts">Contacts</a></li>
+</ul>
 </nav>
 </header>
 
@@ -46,7 +45,7 @@
 <h1 style="white-space: nowrap;">Hello, I'm <span>Tarun Tyagi</span></h1>
 <h3 style="font-size: 16px;"> Data Science  &  AI/ML/DL Learner</h3>
 <a href="#projects" class="cta-btn">View Projects</a>
-<a href="resume/resume.pdf"
+<a href="resume/Resume.pdf"
 target="_blank" class="resume-btn" style="margin-top: 30px; margin-left: 0px; "> Download Resume
 </a>
 </div>
@@ -81,26 +80,22 @@ I am always eager to learn new tools, explore emerging technologies, and take on
 <h2 class="skills-btn">Skills</h2>
 
 <div class="skill-category">
-<h3>🌐 Web Development</h3>
-<div class="grid">
-<div class="card">HTML</div>
-<div class="card">CSS</div>
-<div class="card">JavaScript</div>
-</div>
-</div>
+
 
 <div class="skill-category">
-<h3>💻 Programming Languages</h3>
+
 <div class="grid">
 <div class="card">C</div>
 <div class="card">C++</div>
 <div class="card">Python</div>
 <div class="card">Go</div>
+<div class="card">SQL</div>
+<div class="card">MySQL</div>
 </div>
 </div>
 
 <div class="skill-category">
-<h3>📊 Data & Analytics</h3>
+
 <div class="grid">
 <div class="card">Advanced Excel</div>
 <div class="card">Power BI</div>
@@ -115,7 +110,7 @@ I am always eager to learn new tools, explore emerging technologies, and take on
 </div>
 
 <div class="skill-category">
-<h3>🤖 AI / Machine Learning</h3>
+
 <div class="grid">
 <div class="card">Artifically Intelligence</div>
 <div class="card">Machine Learning</div>
@@ -124,7 +119,7 @@ I am always eager to learn new tools, explore emerging technologies, and take on
 </div>
 
 <div class="skill-category">
-<h3>🧠 Core Computer Science</h3>
+
 <div class="grid">
 <div class="card">Data Structures & Algorithms (DSA)</div>
 </div>
@@ -254,6 +249,113 @@ About Project</a>
 </section>
 
 </div>
+
+
+<! award section >
+<section id="Awards" style="padding:80px 10%; text-align:center;">
+
+    <h2 style="color:#64ffda; font-size:35px; margin-bottom:40px;">
+        🏆 Awards & Achievements
+    </h2>
+
+    <div style="
+        max-width:800px;
+        margin:20px auto;
+        padding:25px;
+        border:1px solid #64ffda;
+        border-radius:15px;
+        background:rgba(255,255,255,0.05);
+        box-shadow:0 0 15px rgba(100,255,218,0.3);
+    ">
+        <h3 style="color:#64ffda; margin-bottom:10px;">
+            Performance Improvement Award (2024-25)
+        </h3>
+
+        <p style="color:white; line-height:1.8;">
+            Received from I.T.S Mohan Nagar, Ghaziabad for remarkable
+            improvement in academic performance during the BCA program.
+        </p>
+    </div>
+
+    <div style="
+        max-width:800px;
+        margin:20px auto;
+        padding:25px;
+        border:1px solid #64ffda;
+        border-radius:15px;
+        background:rgba(255,255,255,0.05);
+        box-shadow:0 0 15px rgba(100,255,218,0.3);
+    ">
+        <h3 style="color:#64ffda; margin-bottom:10px;">
+            Meritorious Award (2024-25)
+        </h3>
+
+        <p style="color:white; line-height:1.8;">
+           Awarded a Certificate of Merit for securing 31st position in the BCA University Examination (2024–25) with a scholarship amount of ₹2,500. This recognition reflects academic excellence, dedication, and consistent performance in university studies.
+        </p>
+    </div>
+
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section id="Experience" style="padding:80px 20px; text-align:center;">
+
+    <h2 style="
+    display:inline-block;
+    background:#64ffda;
+    color:#0a192f;
+    padding:15px 50px;
+    border-radius:50px;
+    box-shadow:0 0 20px #64ffda;
+    margin-bottom:40px;">
+    Experience
+    </h2>
+
+    <div
+    onmouseover="this.style.background='#64ffda'; this.style.color='black';"
+    onmouseout="this.style.background='rgba(255,255,255,0.05)'; this.style.color='white';"
+
+    style="
+    max-width:850px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid #64ffda;
+    background:rgba(255,255,255,0.05);
+    box-shadow:0 0 15px rgba(100,255,218,0.3);
+    transition:0.4s;">
+
+        <h2>Cognifyz Technologies Pvt. Ltd.</h2>
+
+        <h3>Data Science Intern</h3>
+
+        <p><strong>Duration: 1 Month</strong> </p>
+
+        <p><strong>Mode:</strong>  (Remote / On-site)</p>
+
+        <br>
+
+        <h3>Responsibilities</h3>
+
+        <p>• Worked on Data Science projects.</p>
+        <p>• Performed Data Cleaning and Data Preprocessing.</p>
+        <p>• Created Data Visualizations using Python.</p>
+        <p>• Worked with Pandas, NumPy, Matplotlib and Seaborn.</p>
+        <p>• Completed internship tasks and projects assigned by the company.</p>
+
+        <br>
+
+        <h3>Skills Gained</h3>
+
+        <p>• Python</p>
+        <p>• Data Analysis</p>
+        <p>• Data Visualization</p>
+        <p>• Machine Learning Basics</p>
+        <p>• Problem Solving</p>
+
+    </div>
+
+</section>
 
 <!-- CONTACT -->
 <section id="contacts" class="section fade">
