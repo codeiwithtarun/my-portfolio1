@@ -46,11 +46,10 @@ nav ul{
     list-style:none;
 }
 #nav-links{
-    display:grid;
-    grid-template-columns: repeat(7, auto);
-    gap:23px 25px;
+    display:flex;
     list-style:none;
-    justify-content:center;
+    gap:20px;
+    align-items: center;
 }
 
 nav a{
@@ -485,3 +484,98 @@ animation: beat 1s infinite;
                                  /* mobile me preview fix or sahi karne ke liye  */
 
 
+@media screen and (max-width:768px){
+
+header{
+    padding:15px 20px;
+}
+
+nav{
+    position:relative;
+}
+
+.logo{
+    font-size:30px;
+}
+
+.hamburger{
+    display:block;
+    font-size:32px;
+}
+
+#nav-links{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:70px;
+    right:0;
+    width:240px;
+    background:#112240;
+    padding:20px;
+    border-radius:10px;
+    gap:18px;
+    z-index:1000;
+}
+
+#nav-links.active{
+    display:flex;
+}
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    padding:120px 20px 40px;
+}
+
+.hero h1{
+    font-size:38px;
+    white-space:normal !important;
+}
+
+.hero h3{
+    font-size:18px !important;
+}
+
+.hero-img{
+    margin-top:20px !important;
+}
+
+.profile-pic{
+    width:220px;
+}
+
+.cta-btn,
+.resume-btn{
+    width:90%;
+    display:block;
+    margin:15px auto;
+}
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.slider img{
+    width:95%;
+    height:auto;
+}
+
+.modal-content{
+    width:95%;
+}
+
+.section{
+    padding:80px 20px;
+}
+
+#about p{
+    font-size:16px;
+    text-align:justify;
+}
+
+.social-icons{
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+}
